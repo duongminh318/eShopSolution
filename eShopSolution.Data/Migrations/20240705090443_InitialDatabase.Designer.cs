@@ -10,8 +10,8 @@ using eShopSolution.Data.EF;
 namespace eShopSolution.Data.Migrations
 {
     [DbContext(typeof(EShopDbContext))]
-    [Migration("20240705075723_Initial")]
-    partial class Initial
+    [Migration("20240705090443_InitialDatabase")]
+    partial class InitialDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -207,7 +207,7 @@ namespace eShopSolution.Data.Migrations
                     b.Property<DateTime>("OrderDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 7, 5, 14, 57, 23, 122, DateTimeKind.Local).AddTicks(2088));
+                        .HasDefaultValue(new DateTime(2024, 7, 5, 16, 4, 42, 768, DateTimeKind.Local).AddTicks(570));
 
                     b.Property<string>("ShipAddress")
                         .IsRequired()
