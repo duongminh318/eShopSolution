@@ -5,8 +5,4 @@
     <TypeScriptJSXEmit>none</TypeScriptJSXEmit>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>
